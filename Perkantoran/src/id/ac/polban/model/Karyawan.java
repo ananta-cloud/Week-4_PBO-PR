@@ -13,20 +13,20 @@ public class Karyawan {
       Karyawan.divisi = divisi;
    }
 
-   public static String getId() {
-      return Karyawan.id;
+   public String getId() {
+      return id;
    }
 
-   public static String getNama() {
-      return Karyawan.nama;
+   public String getNama() {
+      return nama;
    }
 
-   public static String getJabatan() {
-      return Karyawan.jabatan;
+   public String getJabatan() {
+      return jabatan;
    }
 
-   public static String getDivisi() {
-      return Karyawan.divisi;
+   public String getDivisi() {
+      return divisi;
    }
 
    public static void setId(String id) {
@@ -47,9 +47,9 @@ public class Karyawan {
 
    @Override
    public String toString() {
-      return "  ID      : " 
-      + Karyawan.id + "\n  Nama    : " + Karyawan.nama + 
-      "\n  Jabatan : " + Karyawan.jabatan + "\n  Divisi  : " 
-      + Karyawan.divisi + "\n";
+      return "  ID      : " + Karyawan.id + 
+           "\n  Nama    : " + Karyawan.nama + 
+           "\n  Jabatan : " + Karyawan.jabatan + 
+           "\n  Divisi  : " + Karyawan.divisi + "\n";
    }
 }

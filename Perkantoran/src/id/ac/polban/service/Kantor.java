@@ -9,7 +9,7 @@ public class Kantor {
 
     public static void tambahKaryawan(Karyawan karyawan) {
         daftarKaryawan.add(karyawan);
-        System.out.println("-> Berhasil menambahkan karyawan: " + Karyawan.getNama());
+        System.out.println("-> Berhasil menambahkan karyawan: " + karyawan.getNama());
     }
 
     public static void tampilkanSemuaKaryawan() {
@@ -25,7 +25,7 @@ public class Kantor {
     }
 
     public static void hapusKaryawan(String id) {
-        boolean isRemoved = daftarKaryawan.removeIf(karyawan -> Karyawan.getId().equalsIgnoreCase(id));
+        boolean isRemoved = daftarKaryawan.removeIf(karyawan -> karyawan.getId().equalsIgnoreCase(id));
         if (isRemoved) {
             System.out.println("-> Karyawan dengan ID " + id + " berhasil dihapus.");
         } else {
